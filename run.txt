@@ -1,0 +1,2 @@
+python eval.py --output_folder=./outputs --input_folder="C:/Users/86139/Desktop/FinalProject/PatchmatchNet-main/PatchmatchNet-main/dtu/dtu/" --checkpoint_path=./checkpoints/params_000007.ckpt --scan_list="C:/Users/86139/Desktop/FinalProject/PatchmatchNet-main/PatchmatchNet-main/lists/dtu/test.txt"
+已经迁移到D盘，注意修改地址
