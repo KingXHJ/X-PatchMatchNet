@@ -250,8 +250,8 @@ if __name__ == "__main__":
     # Command: python colmap_input.py --input_folder /home/doctor/LizhongZhang/PatchmatchNet-main/data/hitstar --output_folder /home/doctor/LizhongZhang/PatchmatchNet-main/data/hitstar
     parser = argparse.ArgumentParser(description="Convert colmap results into input for PatchmatchNet")
 
-    parser.add_argument("--input_folder", type=str, help="Project input dir.")
-    parser.add_argument("--output_folder", type=str, default="", help="Project output dir.")
+    parser.add_argument("--input_folder", default="/home/doctor/LizhongZhang/X-PatchMatchNet/data/CircuitBoard", type=str, help="Project input dir.")
+    parser.add_argument("--output_folder", default="/home/doctor/LizhongZhang/X-PatchMatchNet/data/CircuitBoard", type=str, help="Project output dir.")
     parser.add_argument("--num_src_images", type=int, default=-1, help="Related images")
     parser.add_argument("--theta0", type=float, default=5)
     parser.add_argument("--sigma1", type=float, default=1)

@@ -313,9 +313,9 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Predict depth, filter, and fuse")
 
     # High level input/output options
-    parser.add_argument("--input_folder", type=str, help="input data path")
-    parser.add_argument("--output_folder", type=str, default="", help="output path")
-    parser.add_argument("--checkpoint_path", type=str, help="load a specific checkpoint for parameters of model")
+    parser.add_argument("--input_folder", type=str, default="/home/doctor/LizhongZhang/X-PatchMatchNet/data/CircuitBoard", help="input data path")
+    parser.add_argument("--output_folder", type=str, default="/home/doctor/LizhongZhang/X-PatchMatchNet/outputs", help="output path")
+    parser.add_argument("--checkpoint_path", type=str, default="/home/doctor/LizhongZhang/X-PatchMatchNet/checkpoints/params_000007.ckpt", help="load a specific checkpoint for parameters of model")
     parser.add_argument("--file_format", type=str, default=".pfm", help="File format for depth maps",
                         choices=[".bin", ".pfm"])
     parser.add_argument("--input_type", type=str, default="params", help="Input type of checkpoint",
